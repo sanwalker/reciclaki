@@ -1,0 +1,171 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+body{
+    font-family: fira sans, Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+}
+
+
+#copy{
+    background: #0D0D0D;
+    color: #5C5C5C;
+    font-size: 10pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+#roda_center{
+    text-align: center;
+}
+
+#action{
+    width: 100%;
+    max-width: 1920px;
+    background: #2FAC66;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#action a{
+    padding: 10px;
+    color: yellow;
+    border: 2px solid yellow;
+    text-decoration: none;
+    
+}
+
+#action a:hover{
+    
+    
+}
+
+#action h2{
+    margin-bottom:35px;
+}
+
+#menu-interno{
+    /* === Flex ===*/
+    /*max-width: 1920px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap; 
+    max-width: 1920px;
+
+    
+    background: #2FAC66;
+    border-bottom: 4px solid #2FAC66;
+}
+
+
+
+
+
+#menu-interno a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+ 
+}
+
+
+#menu-interno nav{
+    
+    margin-left: 700px;
+}
+
+
+
+
+#menu-interno nav a:hover{
+    color: #16FF97;
+    transition: 0.5s;
+    border-top-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    
+    
+    /*border-top: 3px solid  #217948;*/
+}
+
+#foto-perfil{
+    width: 80px;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-left: -200px;
+    
+}
+
+
+
+/*====================================================================================================*/
+
+
+#divisao_interna{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+#divisao_interna h2{
+color: #2FAC66;
+text-align: center;
+}
+
+#divisao_interna div{
+    margin-left: 50px;
+    padding-top: 20px;
+    border: 2px solid #2FAC66;
+    width: 40%;
+    background: white;
+    text-align: center;
+
+    -webkit-box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+    -moz-box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+    box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+
+}
+
+#divisao_interna div i{
+    text-align: center;
+    color: #0FAC66;
+    margin-top: 50px;
+}
+
+#divisao_interna div ul{
+    list-style: none;
+    
+    margin-left: 20px;
+}
+
+#divisao_interna_dados{
+    padding-left: 25px;
+    
+}
+
+#maps{
+    padding-left: 10px;
+    width: 100%;
+}
+
+#roda_center nav i{
+    color:#0FAC66;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+

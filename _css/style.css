@@ -1,0 +1,964 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+
+}
+
+body{
+    font-family: fira sans, Arial, Helvetica, sans-serif;
+    
+}
+
+#botao{
+    
+    color: black ;
+    border: #5C5C5C 2px solid;
+    background: #F8AC09;
+    
+}
+
+#cabecalho nav #botao{
+    color:black;
+   
+    border-radius: 0%;
+}
+
+#cabecalho nav #botao:hover{
+    color:white;
+    background: #2FAC66;
+    border-radius: 0%;
+}
+
+
+#copy{
+    background: #0D0D0D;
+    color: #5C5C5C;
+    font-size: 10pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+hr{
+    width: 100px;
+    border: 2px solid #2FAC66;
+    margin-bottom: 20px;
+    
+}
+
+/* ================================== 
+
+Scroll 
+
+========================== */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #F9F9F9;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #6BBA8D;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #8EF8BD;
+}
+
+
+
+/* ================================== 
+
+Cabecalho 
+
+========================== */
+
+#cabecalho{
+    /* === Flex ===*/
+    /*max-width: 1920px;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap; 
+    max-width: 1920px;
+
+    border-bottom: 4px solid #2FAC66;
+}
+
+
+
+
+
+#cabecalho a{
+    margin-left: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #2FAC66;
+ 
+}
+
+
+#cabecalho nav{
+    margin-right: 30px;
+}
+
+#cabecalho nav a:hover{
+    background: #217948;
+    color: white;transition: 0.5s;
+    border-top-left-radius: 45%;
+    
+    border-bottom-right-radius: 45%;
+    
+    
+    /*border-top: 3px solid  #217948;*/
+}
+
+
+
+
+#slide img{
+    max-width: 1920px;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#slide {
+    margin-top: -10px;
+    width: 100%;
+    
+}
+
+
+
+/* ================================== 
+
+Conteudo ICONES 
+
+========================== */
+
+
+#conteudo1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+#conteudo1 h1{
+    color: #2FAC66;
+    text-transform: uppercase;
+    font-size: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#conteudo1 h3{
+    color: #2FAC66;
+    text-transform: uppercase;
+}
+
+#conteudo-titulo p{
+    padding-top: 10px;
+}
+
+#conteudo-icons{
+    /* === Flex ===*/
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#conteudo-icons img{
+    margin-bottom: 20px;
+}
+
+/*Botoes */
+.submit{
+    padding: 15px;
+    background: white;
+    margin-right: 10px;
+    border: 3px solid #2FAC66;
+    
+    /*Personalização de texto*/
+    color: #2FAC66;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.submit:hover{
+   background: #217948; 
+   color: white;
+
+   transition: 1s;
+}
+
+
+
+
+/* ==================================
+
+RODAPÉ
+
+ ========================== */
+
+#rodape{
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap; 
+    background: #252525;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+#rodape img{
+    margin-right: 400px;
+}
+
+#rodape nav {
+    margin-top: 5px;
+    margin-right: 40px;
+    text-align: center;
+    /*background: white;*/
+    color: white;
+    
+}
+
+
+#rodape a{
+    margin-left: 10px;
+
+}
+
+#rodape nav a{
+    
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+
+
+
+#rodape nav a:hover{
+    color: #5DF8A1;
+}
+
+
+/* ==================================
+
+Quem Somos
+
+ ========================== */
+
+
+#quem_somos{
+    max-width: 1920px; 
+    padding-top:60px;
+    padding-bottom:60px;
+    display: flex;
+    
+    
+    background: rgba(47,172,102,1);
+    background: -moz-linear-gradient(left, rgba(47,172,102,1) 0%, rgba(47,207,102,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(47,172,102,1)), color-stop(100%, rgba(47,207,102,1)));
+    background: -webkit-linear-gradient(left, rgba(47,172,102,1) 0%, rgba(47,207,102,1) 100%);
+    background: -o-linear-gradient(left, rgba(47,172,102,1) 0%, rgba(47,207,102,1) 100%);
+    background: -ms-linear-gradient(left, rgba(47,172,102,1) 0%, rgba(47,207,102,1) 100%);
+    background: linear-gradient(to right, rgba(47,172,102,1) 0%, rgba(47,207,102,1) 100%); 
+}
+
+#quem_somos div{
+    padding-right: 30px;
+    padding-left: 40px;
+    text-align: justify;
+    color: white;
+    width: 1920px;
+    align-items: center;
+    background: transparent;
+    margin: 0px auto;
+    justify-content: center;
+    
+}
+
+
+
+#quem_somos a{
+    text-decoration: none;
+    background: #F8B337;
+    text-align: right;
+    padding: 15px;
+    
+    color: black;
+    
+}
+
+#quem_somos a:hover{
+    background:white;
+    color: black;
+}
+
+
+
+#quem_somos h1{
+    margin-bottom: 20px;
+    font-size: 31px;
+}
+
+#quem_somos img{
+    border: 4px solid white;
+    margin-top: 25px;
+}
+
+
+
+/* ================================== 
+
+Depoimentos 
+
+==================================== */
+
+
+
+
+
+
+#depoimentos h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    color: #2FAC66;
+    font-size: 31px;
+
+}
+
+#depoimentos-interno{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+}
+
+#depoimentos-interno div{
+    width: 394px;
+    border-bottom: 2px solid #2FAC66;
+    text-align: center;
+    background:  white;
+    
+    padding: 15px;
+
+    -webkit-box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+    -moz-box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+    box-shadow: 3px 7px 17px -4px rgba(168,168,168,0.54);
+
+}
+
+#depoimentos-interno img{
+border-radius: 100%;
+margin-bottom: 15px;
+margin-top: 15px;
+border: 3px solid #2FAC66;
+
+}
+
+#depoimentos-interno p{
+font-size: 17px;
+text-align: center;
+
+}
+
+
+/* ================================== 
+
+Empresas
+
+==================================== */
+#empresas {
+    background: #F7F7F7;
+    
+}
+
+
+#empresas h1{
+    margin-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2FAC66;
+    text-transform: uppercase;
+    font-size: 31px;
+}
+
+#parceiros{
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 120px;
+}
+
+#parceiros div img:hover{
+    filter: grayscale(80%);
+}
+
+
+
+
+
+
+/*=============================================================================================
+
+PÁGINA QUEM SOMOS
+
+=============================================================================================*/
+
+#quem-somos_interna{
+    /*align-content: center;*/
+    max-width: 1920px;
+    text-align: center;
+
+
+}
+
+#quem-somos_interna h1{
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #2FAC66;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#quem-somos_interna img{
+    width: 100%;
+}
+
+
+
+#quem-somos_interna p{
+    width: 90%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+
+/*=============================================================================================
+
+PÁGINA COMO FUNCIONA
+
+=============================================================================================*/
+
+
+#como-funciona{
+    max-width: 1920px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+#como-funciona a{
+    text-align: center;
+}
+
+
+
+#como-funciona h1{
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #2FAC66;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    
+}
+
+#como-funciona h2{
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #2FAC66;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    
+}
+
+.como_funciona_flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.como_funciona_flex div{
+    width: 40%;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #2FAC66;
+
+    /*-webkit-box-shadow: -1px 7px 17px -4px rgba(168,168,168,0.79);
+-moz-box-shadow: -1px 7px 17px -4px rgba(168,168,168,0.79);
+box-shadow: -1px 7px 17px -4px rgba(168,168,168,0.79);*/
+}
+
+
+mark{
+    background: #217948;
+    color: white;
+}
+
+#como-funciona ul li{
+    text-align: center;
+    list-style: none;
+}
+
+/*TABS*/
+
+div.tab {
+    max-width: 1920px;
+    overflow: hidden;
+    border-bottom: 2px solid #6BBA8D;
+    border-top: 2px solid #6BBA8D;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    
+}
+
+div.tab button:hover {
+    background-color: #6BBA8D;
+}
+
+div.tab button.active {
+    background-color: #44F893;
+}
+
+.tabcontent {
+    max-width: 1920px;
+    display: none;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding-bottom: 10px;
+    /*margin-right: 10%;*/
+}
+
+.botao_como_funciona{
+    padding: 15px;
+    background: white;
+    border: 3px solid #2FAC66;
+    margin-top: 20px;
+    position: absolute;
+    
+    /*Personalização de texto*/
+    color: #2FAC66;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/*=============================================================================================
+
+PÁGINA DE CONTATO
+
+=============================================================================================*/
+
+
+
+#contato-conteudo{
+    padding-top:60px;
+    padding-bottom:60px;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+
+#contato-interna{
+    max-width: 1920px;
+    /*border-right: 3px solid #2FAC66;*/
+    width: 50%;
+}
+
+#contato-interna h1{
+    margin-top: 120px;
+    color: #2FAC66;
+    text-transform: uppercase;
+    font-size: 31px;
+    text-align: center;
+}
+
+#contato-interna h1{
+    margin-top: 120px;
+    color: #2FAC66;
+    text-transform: uppercase;
+    font-size: 31px;
+}
+
+#lista-contato{
+    list-style: none;
+    text-align: center;
+    
+}
+
+#list-contato li{
+    margin: 10px;
+}
+
+
+
+
+/*=============================================================================================
+
+PÁGINA cadastre-se
+
+=============================================================================================*/
+
+#titulo_cadastre{
+
+    margin-top: 120px;
+    color: #2FAC66;
+    text-transform: uppercase;
+    font-size: 31px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.fildset
+{
+border:none;
+}
+
+#formulario{
+    max-width: 1920px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+.container h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1920px) {
+    
+.topnav{
+        display: none;
+    }
+
+     
+}
+
+@media screen and (max-width: 970px){
+         #quem_imagem{
+            display:none;
+        }
+
+        #quem_somos div {
+            width: 100%;
+            
+        }
+
+    
+}
+
+
+@media screen and (min-width: 970px) {
+        #quem_somos div {
+            width: 100%;
+        }
+
+        .topnav{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 750px){
+        #quem_imagem{
+            display:none;
+
+        }
+
+        #quem_somos div {
+            width: 100%;
+            
+        }
+}
+
+
+
+@media screen and (min-width: 750px){
+    #quem-somos div {
+            width: 100%;
+        }
+    
+    
+    .topnav{
+        display: none;
+    } 
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+        #depoimentos-interno{
+            width: 100%;
+        }
+
+        .topnav{
+        display: none;
+         
+        }
+
+        #quem_somos div {
+            width: 100%;
+            
+        } 
+}
+
+@media screen and (max-width: 480px) {
+
+        #cabecalho{
+            display: none;
+        }
+
+        #quem_somos div {
+            width: 100%;
+            
+        }
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 2px solid #2FAC66;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #252525;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #2FAC66; /* Gray border */
+    /*border-radius: 4px;  Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*==================================================================================================*/
+
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+.linha
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.coluna1, .coluna2
+{
+    align-items: center;
+    font-size: 1.5em;
+
+    padding:0 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-clip: content-box;
+    
+    justify-content: center;   
+}
+.coluna1
+{
+    flex: 1 1 40%;
+
+    background-color: #2FAC66;
+}
+.coluna2
+{
+    flex: 1 1 40%;
+
+    background-color: #2FAC66;
+}
+form{
+    margin: 20px;
+}
+.coluna2 h2{
+    margin-left:10px;
+    margin-top:5px;
+}
+.coluna1 h2{
+    margin-left:10px;
+      margin-top:5px;
+}
+
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffff;
+  
+  width: 20%;
+  border: 0;
+  padding: 20px;
+  color: gray;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

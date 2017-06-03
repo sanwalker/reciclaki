@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>PROJETO RECICLAKI</title>
+            <link rel="icon" type="image/png" href="images\favicon.png" />
+            <meta name="description" content="">
+            <meta name="keywords" content="">
+            <meta name="author" content="Pierre Pereira, José Venceslau, Thiago Oliveira">
+<!--Responsividade-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            
+<!--Personalização-->
+            <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+            <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="_css\style_interno.css">
+        </head>
+
+        <body>
+            
+
+<!-- ============== 
+Cabecalho
+==============-->
+
+<header id="menu-interno">
+                <a href="index.html"><img src="images\reciclakilogoffff.png" alt="" style="width:280px"></a>
+                
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="interna.html"> PERFIL</a>
+                    <a href="contato.html">CONTATO</a>
+                    
+                </nav>
+                <img id="foto-perfil" src="images\people_1.jpg">
+                
+</header>
+
+<div id="divisao_interna">
+    <div id="divisao_interna_dados">
+        
+        <h2>Dados Cadastrais</h2>
+        <i class="fa fa-id-card-o fa-5x" aria-hidden="true"></i>
+        <ul>
+            <br>
+            <li><strong>Nome: </strong><br>Carlos José</li>
+            <br>
+            <li><strong>Endereço: </strong>
+                <br>Quadra Dez, 1340</li>
+            <li>Marabá-PA</li>
+            <br>
+            <li><strong>Telefone: </strong><br>(81) 999605193</li>
+            <br>
+            <li><strong>E-mail: </strong><br>contato@dominio.com.br</li>
+            <br>
+        </ul>
+    </div>
+    <div id="maps">
+        <h2>Mapa</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d493.8272675762714!2d-34.89180979125145!3d-8.038246536724335!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1496348162750" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+
+</div>
+
+<div id="action">
+    <h2>Doe para as familia desabrigadas 
+        <br>do interior do Recife</h2>
+        <a href="">Doar agora</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="roda_center">
+                <h3>Nossas Redes Sociais</h3>
+                <nav>
+                    
+                    <a href="https://www.facebook.com/Reciclaki-1727980644168634/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/ReciclakiPE" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/reciclakipe/?hl=pt-br" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                </nav>
+
+</footer>
+
+<div id="copy">
+    <em>	&#169; Copyright 2017. Reciclaki LTDA</em>
+</div>
+
+
+
+
+
+
+
+        </body>
+
+
+<!--========= Script do SlideShow =========-->
+        <script type="text/javascript">
+                var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("carrousel");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 5000); 
+            }
+        </script>
+
+<!--========= Script do Menu Responsivo =========-->
+
+       <script type="text/javascript"> 
+
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+       </script>
+
+
+
+
+    </html>
+
